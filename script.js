@@ -18,3 +18,21 @@ No se permite acentuación de palabras
 Solo letras minusculas
 No se permite acentuación de palabras   
 */
+
+
+
+var botonEncriptar = document.querySelector("#btn-encriptar");
+//console.log (textoAEncriptar)
+
+botonEncriptar.addEventListener("click",function(event){
+ //  event.preventDefault();
+var capturarTextoAEncriptar = document.querySelector("#input-texto");
+//var capturarTextoAEncriptar = document.getElementsByClassName ("#input-texto")
+ var textoAEncriptar= capturarTextoAEncriptar.value
+ alert(textoAEncriptar)
+//return;
+
+
+  //      return;
+    })
+
