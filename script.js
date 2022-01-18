@@ -77,7 +77,9 @@ botonEncriptar.addEventListener("click",function(event){
 
     });
 
-    document.getElementById("msg").innerHTML = textoEncriptado.join('');
+   var textoEncriptadoMostrado = document.getElementById("msg");
+    
+    textoEncriptadoMostrado.value = textoEncriptado.join('');
 
     console.log(textoEncriptado.join(''))
 
