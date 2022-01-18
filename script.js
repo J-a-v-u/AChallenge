@@ -37,21 +37,52 @@ botonEncriptar.addEventListener("click",function(event){
     letras.forEach(function(currentValue){
         if (currentValue == "e") {
             textoEncriptado.push("enter");
+            return textoEncriptado;
             }
+
+        if (currentValue == "i") {
+            textoEncriptado.push("imes");
+            return textoEncriptado;
+             }
+
+
+        if (currentValue == "a") {
+            textoEncriptado.push("ai");
+            return textoEncriptado;
+             }
+
+
+
+        if (currentValue == "o") {
+            textoEncriptado.push("ober");
+            return textoEncriptado;
+            }
+
+
+
+         if (currentValue == "u") {
+            textoEncriptado.push("ufat");
+            return textoEncriptado;
+            }
+
+
         else{
             textoEncriptado.push(currentValue);
-  
+            return textoEncriptado;
         }
-        console.log(textoEncriptado.join(''));
 
-        return textoEncriptado;
+
+       
 
 
     });
 
-alert(textoEncriptado.join(''));
+    document.getElementById("msg").innerHTML = textoEncriptado.join('');
 
-//
+    console.log(textoEncriptado.join(''))
+
+//alert(textoEncriptado.join(''));
+
 
 
   //      return;
