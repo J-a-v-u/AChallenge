@@ -30,14 +30,28 @@ botonEncriptar.addEventListener("click",function(event){
 
     var textoAEncriptar= capturarTextoAEncriptar.value;
     let letras = textoAEncriptar.split('')
-
-    console.log(letras);
+    var textoEncriptado = []
+   // console.log(letras);
     event.preventDefault();
 
+    letras.forEach(function(currentValue){
+        if (currentValue == "e") {
+            textoEncriptado.push("enter");
+            }
+        else{
+            textoEncriptado.push(currentValue);
+  
+        }
+        console.log(textoEncriptado.join(''));
+
+        return textoEncriptado;
 
 
+    });
 
-//return;
+alert(textoEncriptado.join(''));
+
+//
 
 
   //      return;
