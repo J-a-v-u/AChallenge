@@ -19,7 +19,7 @@ Solo letras minusculas
 No se permite acentuación de palabras   
 */
 
-
+//FFFFFFFFFFFFFFFFFFFFFFFFFFFFFUNCION PARA ENCRIPTAR
 
 var botonEncriptar = document.querySelector("#btn-encriptar");
 //console.log (textoAEncriptar)
@@ -78,18 +78,13 @@ botonEncriptar.addEventListener("click",function(event){
     textoEncriptadoMostrado.value = textoEncriptado.join('');
 
     console.log(textoEncriptado.join(''))
-
+    return textoEncriptadoMostrado;
 // var textoEncriptadoFinal = textoEncriptado.join('');
 
 
-   
- function copy() {
-    var copyText = document.querySelector("#msg");
-    copyText.select();
-    document.execCommand("copy");
-  }
-  
-  document.querySelector("#botonCopiar").addEventListener("click", copy);
+
+
+
 
 
 
@@ -105,6 +100,67 @@ botonEncriptar.addEventListener("click",function(event){
 
 
 
+
+
+//FFFFFFFFFFFFFFFFFFFFFFFFFFFUNCION PARA COPIAR
+
+
+
+
+
+
+   
+ function copy() {
+    var copyText = document.querySelector("#msg");
+    copyText.select();
+    document.execCommand("copy");
+  }
+  
+  
+  document.querySelector("#botonCopiar").addEventListener("click", copy);
+
+
+
+
+
+
+
+
+// FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFUNCION PARA DESENCRIPTAR
+
+//var textoEncriptadoFinal = textoEncriptado.join('');
+var botonDesencriptar = document.querySelector("#btn-desencriptar");
+
+function desencriptarLetra (regla, letra, texto) {
+  //  var text = texto;
+    var desencriptado = texto.replaceAll(regla, letra);
+    return desencriptado;
+
+}
+
+botonDesencriptar.addEventListener("click",function(event){
+    event.preventDefault();
+
+    var capturarTextoADesencriptar = document.querySelector("#input-texto");
+
+                
+    var desencriptadoA = desencriptarLetra('ai', 'a', capturarTextoADesencriptar.value);
+    // console.log (capturarTextoADesencriptar.value)
+      
+      var desencriptadoE = desencriptarLetra('enter', 'e', desencriptadoA);
+      var desencriptadoI = desencriptarLetra('imes', 'i', desencriptadoE);
+      var desencriptadoO = desencriptarLetra('ober', 'o', desencriptadoI);
+      var desencriptadoU = desencriptarLetra('ufat', 'u', desencriptadoO);
+console.log (desencriptadoU)
+    
+var textoDesencriptadoMostrado = document.getElementById("msg");
+    
+textoDesencriptadoMostrado.value = desencriptadoU;
+
+     //  let result = text.replace("Microsoft", "W3Schools");
+
+
+})
 
 
 
