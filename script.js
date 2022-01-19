@@ -71,10 +71,6 @@ botonEncriptar.addEventListener("click",function(event){
             return textoEncriptado;
         }
 
-
-       
-
-
     });
 
    var textoEncriptadoMostrado = document.getElementById("msg");
@@ -83,11 +79,27 @@ botonEncriptar.addEventListener("click",function(event){
 
     console.log(textoEncriptado.join(''))
 
-//alert(textoEncriptado.join(''));
+// var textoEncriptadoFinal = textoEncriptado.join('');
+
+
+   
+ function copy() {
+    var copyText = document.querySelector("#msg");
+    copyText.select();
+    document.execCommand("copy");
+  }
+  
+  document.querySelector("#botonCopiar").addEventListener("click", copy);
 
 
 
-  //      return;
+
+
+
+
+
+
+
 })
 
 
