@@ -1,5 +1,6 @@
 
  function copy() {
+    cambiarTextoC()
     var copyText = document.querySelector("#msg");
     copyText.select();
     document.execCommand("copy");

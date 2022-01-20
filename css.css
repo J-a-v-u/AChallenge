@@ -36,7 +36,7 @@ body {
   margin: 0 10px 0 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: rgb(14, 34, 22);
-  border-radius: 0.5em;
+  border-radius: 2em;
   width: 30vw;
   height: auto;
 }
@@ -48,13 +48,13 @@ body {
   background-color: rgb(3, 100, 27);
   padding: 10px;
   margin-top: 10px;
-  border-radius: 0.5em;
+  border-radius: 1.5em;
 }
 
 .text-input {
   color: rgb(185, 250, 8);
   background-color: rgb(37, 37, 37);
-  border-radius: 0.5em;
+  border-radius: 1em;
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: block;
   padding: 0.5em;
@@ -72,7 +72,7 @@ body {
 
 .fadeOut {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.49s;
 }
 
 .fadeIn {
