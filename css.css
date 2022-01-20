@@ -62,6 +62,14 @@ body {
   height: 50px;
 }
 
+
+.text {
+  color: rgb(185, 250, 8);
+  
+}
+
+
+
 .fadeOut {
   opacity: 0;
   transition: 0.5s;
