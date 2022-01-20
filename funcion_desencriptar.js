@@ -11,7 +11,7 @@ function desencriptar (){
         event.preventDefault();
         cambiarTextoD();
         var capturarTextoADesencriptar = document.querySelector("#input-texto");       
-              
+
         var desencriptadoA = desencriptarLetra('ai', 'a', capturarTextoADesencriptar.value);
         // console.log (capturarTextoADesencriptar.value)
         var desencriptadoE = desencriptarLetra('enter', 'e', desencriptadoA);

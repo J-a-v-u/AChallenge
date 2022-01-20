@@ -1,4 +1,5 @@
 function encriptar(){
+        event.preventDefault();
         cambiarTextoE(); 
         var capturarTextoAEncriptar = document.querySelector("#input-texto");
 
@@ -6,7 +7,7 @@ function encriptar(){
         let letras = textoAEncriptar.split('')
         var textoEncriptado = []
          // console.log(letras);
-        event.preventDefault();
+       // event.preventDefault;
 
         letras.forEach(function(currentValue){
                         if (currentValue == "e") {
@@ -46,8 +47,6 @@ function encriptar(){
      
         console.log(textoEncriptado.join(''))
          
-     
-     event.preventDefault();
      
      return textoEncriptadoMostrado;
          
