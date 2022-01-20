@@ -19,13 +19,36 @@ Solo letras minusculas
 No se permite acentuación de palabras   
 */
 
+function cambiarTextoE(){
+      var texVar = document.querySelector("#texto-variante");
+      texVar.classList.add("fadeOut");
+      setTimeout(function (){
+         texVar.classList.add("fadeIn");
+        document.getElementById("texto-variante").innerHTML = "Texto encriptado: <br>  <br>";
+      },500);
+     
+}
+
+
+
+function cambiarTextoD(){
+    var texVar = document.querySelector("#texto-variante");
+    texVar.classList.add("fadeOut");
+    setTimeout(function(){
+        texVar.classList.add("fadeIn");
+        document.getElementById("texto-variante").innerHTML = "Texto desencriptado: <br>  <br>";
+         },500);
+ 
+}
+
+
 //FFFFFFFFFFFFFFFFFFFFFFFFFFFFFUNCION PARA ENCRIPTAR
 
 var botonEncriptar = document.querySelector("#btn-encriptar");
 //console.log (textoAEncriptar)
 
 botonEncriptar.addEventListener("click",function(event){
- //  
+    cambiarTextoE(); 
     var capturarTextoAEncriptar = document.querySelector("#input-texto");
 
     var textoAEncriptar= capturarTextoAEncriptar.value;
@@ -132,6 +155,7 @@ botonEncriptar.addEventListener("click",function(event){
 var botonDesencriptar = document.querySelector("#btn-desencriptar");
 
 function desencriptarLetra (regla, letra, texto) {
+
   //  var text = texto;
     var desencriptado = texto.replaceAll(regla, letra);
     return desencriptado;
@@ -139,8 +163,12 @@ function desencriptarLetra (regla, letra, texto) {
 }
 
 botonDesencriptar.addEventListener("click",function(event){
-    event.preventDefault();
 
+   
+
+
+    event.preventDefault();
+   cambiarTextoD();
     var capturarTextoADesencriptar = document.querySelector("#input-texto");
 
                 
@@ -157,7 +185,7 @@ var textoDesencriptadoMostrado = document.getElementById("msg");
     
 textoDesencriptadoMostrado.value = desencriptadoU;
 
-     //  let result = text.replace("Microsoft", "W3Schools");
+    
 
 
 })
