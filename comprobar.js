@@ -31,7 +31,7 @@ function comprobar(){
             
             
             else{
-                alert("No se permiten numeros ni acentos!")
+                alert("No se permiten numeros, caracteres especiales ni acentos!")
                 textoValido=false;
                 document.getElementById("msg").value= "..."
                 return textoValido;
