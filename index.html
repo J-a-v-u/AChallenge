@@ -6,37 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css.css">
-  <img src="https://app.aluracursos.com/assets/images/logos/logo-aluraespanhol.svg" width = "150" height ="100" align="left" />
-  <img src="https://www.oracle.com/a/ocom/img/rh03-lad-one-logo.png" width = "290" height ="200" align="right" />
-
-
 </head>
 <body>
-  <h1 class="titulo"><br>  <br>  <br>  <br> Encriptador de texto para el primer challenge de Alura-ONE</h1>
+    
+  <header>
+    <div class="header-izq">
+         <img src="https://app.aluracursos.com/assets/images/logos/logo-aluraespanhol.svg" />
+    </div>
 
-  <main class="main">
-    <section class="form box">
-      <form action="">
-        <h3 for="input-texto" >  Sólo letras minúsculas, sin acentos ni  números.</h3>
-        <input class="text-input" Autocomplete="off" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
-        <center>
-
-        <input class="btn" type="submit" value="Encriptar!" id="btn-encriptar">
-        <input class="btn" type="submit" value="Desencriptar!" id="btn-desencriptar">
-      </center>
-
-      </form>
-    </section>
+    <div class="header-der">
+        <img src="https://www.oracle.com/a/ocom/img/rh03-lad-one-logo.png" />
+    </div>
   
-    <section class="msg box">
-      <h3 class="fadeOut" id="texto-variante"> Mensaje: <br>  <br> </h3>
-      <input class="text-input" type="text" id="msg"></input>
-<center>
-      <input class="btn" type="submit" value="Copiar texto" id="botonCopiar">
-      <input class="btn" type="submit" value="Pegar texto" id="botonPegar">      
-</center>
-    </section>
-  </main>
+    
+  </header>
+
+
+
+  <div  class="titulo">
+      <h1>Encriptador de texto para el primer challenge de Alura-ONE</h1>
+  </div>
+
+ 
+  <div class="contenedor">
+        
+        <div class="input">
+            <h3>  Sólo letras minúsculas, sin acentos ni  números.</h3>
+
+            <input class="text-input" Autocomplete="off" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+          
+            <input class="btn" type="submit" value="Encriptar!" id="btn-encriptar">
+            <input class="btn" type="submit" value="Desencriptar!" id="btn-desencriptar">
+        
+        </div>
+        
+        <div class="mensajes">
+          <h3 class="fadeOut" id="texto-variante"> Mensaje:  </h3>
+
+          <input class="text-input" type="text" id="msg"></input>
+          
+          <input class="btn" type="submit" value="Copiar texto" id="botonCopiar">
+          <input class="btn" type="submit" value="Pegar texto" id="botonPegar">      
+          
+        </div>
+
+  </div>
+
 
 
 
@@ -51,15 +66,29 @@
 
 </body>
 
+<!--**************************FOOTER********************-->
+<footer class="site-footer">
+  <div class="container">
+  
 
-<footer align="right" style="position: fixed; bottom: 0; width: 100%;">
-  <p class="text">&copy; 2022 (mentira XD)</p>
-  <ul>
-    <li><a class="text" href="https://www.facebook.com/profile.php?id=594804528">Creado por:</a></li>
-    <li><a class="text" href="https://www.linkedin.com/in/javier-alejandro-vieira-nobre-65426922b/">Contactar Linkedin</a></li>
-    <li><a class="text" href="https://github.com/J-a-v-u/AChallenge">GitHub</a></li>
-  </ul>
+      <div class="footer-izq">
+        <h6>About</h6>
+        <p class="text-justify">Diseño web e iconos por:<i> Javier Vieira Nobre.</i> </p>
+        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by <a href="#">mentira XD</a>.</p>
+      </div>
+                    
+      <div class="footer-der">
+        <ul class="social-icons">
+          <li><a class="facebook" href="https://www.facebook.com/profile.php?id=594804528"><img src="images/face.png" ></a></li>
+          <li><a class="github" href="https://github.com/J-a-v-u/ahorcadoChallenge/tree/gh-pages"><img src="images/github.png" ></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/in/javier-alejandro-vieira-nobre-65426922b/"><img src="images/linkedin.png" ></a></li>   
+        </ul>
+      </div>
+
+   
+  </div>
 </footer>
+
 
 
 </html>
